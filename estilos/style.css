@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.primerparrafo {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    font-size: 18px;
+    width: 150px;
+    background-color: yellow;
+    display: inline-block;
+    overflow: auto;
+    text-align: center;
+}
+
+.btn {
+    background-color: aqua;
+}
+
+/* saca el subrayado del  link */
+
+
+/* cuando pasa el mouse por encina del link cambia de color */
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: chartreuse;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: red;
+}
+
+.navbar-nav a:active {
+    font-size: 30px;
+
+}
+
+
+
+
+.imagen {
+    height: 128px;
+}
+
+.imagen-accesorio {
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+ul {
+    /* pone las opciones del menu una al lado de la otra */
+    display: flex;
+    /* saca las viñetas */
+    list-style: none;
+    /* pone el espacio entre cada una de las opciones del menu */
+    gap: 20px;
+    /*font-size: 20px;*/
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 300px);
+    border: 1px solid black;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+
+
+.img1 {
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+
+}
+
+.img2 {
+    height: 100%;
+    width: 100%;
+    grid-column: 2/4;
+}
+
+.img3 {
+    height: 100%;
+    width: 100%;
+    grid-row: 2/4;
+    grid-column: 1/2;
+
+}
+
+.img4 {
+    height: 100%;
+    width: 100%;
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+.img5 {
+    height: 100%;
+    width: 100%;
+    grid-row: 2/4;
+    grid-column: 3/4;
+
+}
+
+
+
+@media screen and (max-width:425px) {
+    nav ul {
+        display: none;
+
+    }
+
+    .imagen-accesorio img {
+
+        height: 128px;
+        overflow: auto;
+    }
+
+
+
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    .imagen-accesorio img {
+
+        height: 256px;
+        overflow: auto;
+    }
+    body {
+        background-color: darkorange;
+    }
+}
