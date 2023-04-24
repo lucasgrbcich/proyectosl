@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="../img/SL.jpg" alt="logo" class="imagen"></a>
@@ -47,26 +47,6 @@
                 </div>
             </div>
         </nav>
-        <!-- <img src="../img/SL.jpg" alt ="logo" class="imagen">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="medicamentos.html">Medicamentos</a>
-                </li>
-                <li>
-                    <a href="accesorios.html">Accesorios</a>
-                </li>
-                <li>
-                    <a href="perfumeria.html">Perfumeria</a>
-                </li>
-                <li>
-                    <a href="contactos.html">Contactos</a>
-                </li>
-            </ul>
-        </nav> -->
 
     </header>
 
@@ -102,7 +82,7 @@
         </section>
 
         <section>
-            <form>
+            <form class="formulario">
                 <h2>Dejenos su consulta</h2>
                 <div>
                     <label for="Nombre">Nombre y Apellido</label>
@@ -111,11 +91,11 @@
                 <div>
 
                     <label for="email">Email </label>
-                    <input tyoe="email" name="email" placeholder="E-mail">
+                    <input tyoe="email" name="email" placeholder="E-mail" class="posicion-mail">
                 </div>
                 <div>
-                    <label for="Asunto">Asunto o Consulta</label>
-                    <textarea name="Asunto" rows="10" cols="30">
+                    <label for="Asunto">Consulta</label>
+                    <textarea name="Asunto" rows="10" cols="30" class="posicion-consulta">
                     </textarea>
                 </div>
                 <input type="submit" value="Enviar Formulario" class="btn">
