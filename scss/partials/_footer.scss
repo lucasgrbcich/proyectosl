@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .primerparrafo {
+        font-family: 'Times New Roman', Times, serif;
+        color:map-get($colores,azul);
+        font-size: 18px;
+        width: 150px;
+        background-color: map-get($colores,amarillo);
+        display: inline-block;
+        overflow: auto;
+        text-align: center;
+
+    }
+}

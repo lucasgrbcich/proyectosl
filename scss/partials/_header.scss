@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: chartreuse;
+
+    .logo {
+        height: 90px;
+    }
+
+    .navbar-nav a {
+        text-decoration: none;
+    }
+
+    .navbar-nav a:hover {
+        color: red;
+    }
+
+    .navbar-nav a:active {
+        font-size: 30px;
+    }
+
+    nav {
+        div {
+
+            div {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    gap: 20px;
+
+
+
+                }
+            }
+        }
+    }
+}

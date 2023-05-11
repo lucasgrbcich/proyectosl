@@ -7,6 +7,7 @@
 h1 {
     color: green;
     text-align: center;
+    text-decoration: underline;
 }
 
 
@@ -26,15 +27,17 @@ h2 {
     overflow: auto;
     text-align: center;
 }
-
+.precios{
+    font-family: 'Times New Roman', Times, serif;
+    color:red;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
 .btn {
     background-color: aqua;
 }
 
-/* saca el subrayado del  link */
-
-
-/* cuando pasa el mouse por encina del link cambia de color */
 
 
 
@@ -63,12 +66,20 @@ header {
 
 .imagen {
     height: 128px;
+    
 }
+
 
 .imagen-accesorio {
     display: flex;
     justify-content: space-around;
     overflow: auto;
+}
+.imagen-accesorio img {
+    transition: all 2s;
+}
+.imagen-accesorio img:hover {
+    transform: scale(2);
 }
 
 .imagen-perfumeria {
@@ -110,7 +121,7 @@ footer {
 
 .contenedor {
     display: grid;
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: 200px 50px 200px 200px 50px;
     grid-template-columns: repeat(3, 300px);
     border: 1px solid black;
     row-gap: 10px;
@@ -128,16 +139,31 @@ footer {
 
 }
 
+
 .img2 {
     height: 100%;
     width: 100%;
     grid-column: 2/4;
 }
+.precio-img1{
+    height: 100%;
+    width: 100%;
+    grid-row:2/3;
+    grid-column: 1/2;
+    text-align: center;
+}
+.precio-img2{
+    height: 100%;
+    width: 100%;
+    grid-row:2/3;
+    grid-column: 2/4;
+    text-align: center;
+}
 
 .img3 {
     height: 100%;
     width: 100%;
-    grid-row: 2/4;
+    grid-row: 3/5;
     grid-column: 1/2;
 
 }
@@ -145,18 +171,47 @@ footer {
 .img4 {
     height: 100%;
     width: 100%;
-    grid-row: 2/4;
+    grid-row: 3/5;
     grid-column: 2/3;
 }
 
 .img5 {
     height: 100%;
     width: 100%;
-    grid-row: 2/4;
+    grid-row: 3/5;
     grid-column: 3/4;
 
 }
+.precio-img3{
+    height: 100%;
+    width: 100%;
+    grid-row:5/6;
+    grid-column: 1/2;
+    text-align: center;
 
+}
+.precio-img4{
+    height: 100%;
+    width: 100%;
+    grid-row:5/6;
+    grid-column: 2/3;
+    text-align: center;
+
+}.precio-img5{
+    height: 100%;
+    width: 100%;
+    grid-row:5/6;
+    grid-column: 3/4;
+    text-align: center;
+
+}
+.parrafo-obrassociales{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
 .formulario {
 
     margin: 0 auto;
@@ -166,6 +221,12 @@ footer {
     align-items: center;
     align-content: center;
     overflow: auto;
+    color:orange;
+    background-image: url('../img/fondo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .posicion-mail {
@@ -211,12 +272,26 @@ footer {
     }
 
     .contenedor-mobil {
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: 200px 50px 200px 200px 50px;
         grid-template-columns: repeat(3, 1fr);
 
         overflow: auto;
     }
-}
+    .img1{
+        object-fit: contain;
+    }
+    .img2{
+        object-fit: contain;
+    }
+    .img3{
+        object-fit: contain;
+    }
+    img4{
+        object-fit: contain;
+    }
+    img5{
+        object-fit: contain;
+    }
 
 @media screen and (min-width:425px) and (max-width:768px) {
     nav ul {
@@ -251,9 +326,10 @@ footer {
     }
 
     .contenedor-mobil {
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: 200px 50px 200px 200px 50px;
         grid-template-columns: repeat(3, 1fr);
 
         overflow: auto;
     }
+    
 }

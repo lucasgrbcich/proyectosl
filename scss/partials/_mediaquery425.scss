@@ -1,0 +1,64 @@
+@media screen and (max-width:425px) {
+    main {
+        section {
+            .imagen-accesorio {
+                height: 128px;
+                overflow: auto;
+
+            }
+
+        }
+
+        section {
+            .imagen-perfumeria {
+                height: 128px;
+                overflow: auto;
+            }
+
+        }
+
+        section {
+            .imagen-medicamentos {
+                overflow: auto;
+            }
+
+            .imagen-medicamentos img {
+                height: 64px;
+            }
+
+            .imagen-medicamentos p {
+                font-size: 10px;
+            }
+        }
+
+        section {
+            .contenedor-mobil {
+                grid-template-rows: 200px 50px 200px 200px 50px;
+                grid-template-columns: repeat(3, 1fr);
+                overflow: auto;
+            }
+
+            .imagen-grid-movil {
+                object-fit: contain;
+            }
+
+            
+        }
+        section{
+            .formulario-movil{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            overflow: auto;
+            color: map-get($colores,naranja );
+            background-image: url('../img/fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            }
+        }
+    }
+}

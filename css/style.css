@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: chartreuse;
+}
+header .logo {
+  height: 90px;
+}
+header .navbar-nav a {
+  text-decoration: none;
+}
+header .navbar-nav a:hover {
+  color: red;
+}
+header .navbar-nav a:active {
+  font-size: 30px;
+}
+header nav div div ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+main h1 {
+  color: green;
+  text-align: center;
+  text-decoration: underline;
+}
+main span {
+  color: green;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+main .imagen {
+  height: 128px;
+}
+main section .precios {
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+}
+main section .contenedor {
+  display: grid;
+  grid-template-rows: 200px 50px 200px 200px 50px;
+  grid-template-columns: repeat(3, 300px);
+  border: 1px solid black;
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-content: center;
+}
+main section .img1 {
+  height: 100%;
+  width: 100%;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+main section .img2 {
+  height: 100%;
+  width: 100%;
+  grid-row: 1/2;
+  grid-column: 2/4;
+}
+main section .precio-img1 {
+  height: 100%;
+  width: 100%;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  text-align: center;
+}
+main section .precio-img2 {
+  height: 100%;
+  width: 100%;
+  grid-row: 2/3;
+  grid-column: 2/4;
+  text-align: center;
+}
+main section .img3 {
+  height: 100%;
+  width: 100%;
+  grid-row: 3/5;
+  grid-column: 1/2;
+}
+main section .img4 {
+  height: 100%;
+  width: 100%;
+  grid-row: 3/5;
+  grid-column: 2/3;
+}
+main section .img5 {
+  height: 100%;
+  width: 100%;
+  grid-row: 3/5;
+  grid-column: 3/4;
+}
+main section .precio-img3 {
+  height: 100%;
+  width: 100%;
+  grid-row: 5/6;
+  grid-column: 1/2;
+  text-align: center;
+}
+main section .precio-img4 {
+  height: 100%;
+  width: 100%;
+  grid-row: 5/6;
+  grid-column: 2/3;
+  text-align: center;
+}
+main section .precio-img5 {
+  height: 100%;
+  width: 100%;
+  grid-row: 5/6;
+  grid-column: 3/4;
+  text-align: center;
+}
+main section .parrafo-obrassociales {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+main section .formulario {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  overflow: auto;
+  color: orange;
+  background-image: url("../img/fondo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main section .posicion-mail, main section .posicion-consulta {
+  position: relative;
+  left: 50px;
+}
+main section .posicion-consulta {
+  left: 65px;
+}
+main section .btn {
+  background-color: aqua;
+}
+main section .imagen-accesorio {
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+}
+main section .imagen-accesorio img {
+  transition: all 2s;
+}
+main section .imagen-accesorio img:hover {
+  transform: scale(2);
+}
+main section .imagen-perfumeria {
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+}
+main section .imagen-medicamentos {
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+}
+main section .imagen-medicamentos p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .primerparrafo {
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+  font-size: 18px;
+  width: 150px;
+  background-color: yellow;
+  display: inline-block;
+  overflow: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  main section .imagen-accesorio {
+    height: 128px;
+    overflow: auto;
+  }
+  main section .imagen-perfumeria {
+    height: 128px;
+    overflow: auto;
+  }
+  main section .imagen-medicamentos {
+    overflow: auto;
+  }
+  main section .imagen-medicamentos img {
+    height: 64px;
+  }
+  main section .imagen-medicamentos p {
+    font-size: 10px;
+  }
+  main section .contenedor-mobil {
+    grid-template-rows: 200px 50px 200px 200px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
+  }
+  main section .imagen-grid-movil {
+    object-fit: contain;
+  }
+  main section .formulario-movil {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+    color: orange;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  main section .imagen-accesorio {
+    height: 128px;
+    overflow: auto;
+  }
+  main section .imagen-perfumeria {
+    height: 128px;
+    overflow: auto;
+  }
+  main section .imagen-medicamentos {
+    overflow: auto;
+  }
+  main section .imagen-medicamentos img {
+    height: 64px;
+  }
+  main section .imagen-medicamentos p {
+    font-size: 10px;
+  }
+  main section .contenedor-mobil {
+    grid-template-rows: 200px 50px 200px 200px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
+  }
+  main section .formulario-movil {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+    color: orange;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

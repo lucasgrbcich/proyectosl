@@ -1,0 +1,212 @@
+main {
+    h1 {
+        color: map-get($colores, verde);
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    span {
+        
+        color: map-get($colores, verde);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        display:flex;
+        justify-content: center;
+        text-decoration: underline;
+    }
+
+    .imagen {
+        height: 128px;
+    }
+
+    section {
+        .precios {
+            font-family: 'Times New Roman', Times, serif;
+            color: map-get($colores, rojo);
+            font-size: 24px;
+            text-align: center;
+            text-decoration: underline;
+
+        }
+
+
+    }
+
+    section {
+       
+
+        .contenedor {
+            display: grid;
+            grid-template-rows: 200px 50px 200px 200px 50px;
+            grid-template-columns: repeat(3, 300px);
+            border: 1px solid black;
+            row-gap: 10px;
+            column-gap: 10px;
+            justify-content: center;
+
+        }
+
+        @mixin alto-ancho {
+            height: 100%;
+            width: 100%;
+        }
+
+        .img1 {
+            @include alto-ancho;
+
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+
+        .img2 {
+            @include alto-ancho;
+            grid-row: 1/2;
+            grid-column: 2/4;
+        }
+
+        .precio-img1 {
+            @include alto-ancho;
+            grid-row: 2/3;
+            grid-column: 1/2;
+            text-align: center;
+
+        }
+
+        .precio-img2 {
+            @include alto-ancho;
+            grid-row: 2/3;
+            grid-column: 2/4;
+            text-align: center;
+        }
+
+        .img3 {
+            @include alto-ancho;
+            grid-row: 3/5;
+            grid-column: 1/2;
+        }
+
+        .img4 {
+            @include alto-ancho;
+            grid-row: 3/5;
+            grid-column: 2/3;
+        }
+
+        .img5 {
+            @include alto-ancho;
+            grid-row: 3/5;
+            grid-column: 3/4;
+
+        }
+
+        .precio-img3 {
+            @include alto-ancho;
+            grid-row: 5/6;
+            grid-column: 1/2;
+            text-align: center;
+
+        }
+
+        .precio-img4 {
+            @include alto-ancho;
+            grid-row: 5/6;
+            grid-column: 2/3;
+            text-align: center;
+        }
+
+        .precio-img5 {
+            @include alto-ancho;
+            grid-row: 5/6;
+            grid-column: 3/4;
+            text-align: center;
+        }
+
+    }
+
+    section {
+        .parrafo-obrassociales {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            text-align: center;
+
+        }
+    }
+
+    section {
+        .formulario {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            overflow: auto;
+            color:map-get($colores,naranja);
+            background-image: url('../img/fondo.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+
+        }
+
+        .posicion-mail {
+            position: relative;
+            left: 50px;
+
+        }
+
+        .posicion-consulta {
+            @extend .posicion-mail;
+            left: 65px;
+        }
+
+        .btn {
+            background-color: aqua;
+
+
+        }
+    }
+
+
+    section {
+        .imagen-accesorio {
+            display: flex;
+            justify-content: space-around;
+            overflow: auto;
+
+        }
+
+        .imagen-accesorio img {
+            transition: all 2s;
+        }
+
+        .imagen-accesorio img:hover {
+            transform: scale(2);
+        }
+    }
+
+    section {
+        .imagen-perfumeria {
+            display: flex;
+            justify-content: space-around;
+            overflow: auto;
+
+
+        }
+    }
+
+    section {
+        .imagen-medicamentos {
+            display: flex;
+            justify-content: space-around;
+            overflow: auto;
+        }
+
+        .imagen-medicamentos p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}
