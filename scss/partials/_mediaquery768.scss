@@ -18,15 +18,18 @@
         }
 
         section {
-            .imagen-medicamentos {
+            .medicamentos-mobil {
+                grid-template-rows: 200px 200px 200px 200px;
+                grid-template-columns: repeat(3, 1fr);
                 overflow: auto;
+
             }
 
-            .imagen-medicamentos img {
+            .medicamentos-mobil img {
                 height: 64px;
             }
 
-            .imagen-medicamentos p {
+            .medicamentos-mobil p {
                 font-size: 10px;
             }
         }
@@ -47,7 +50,7 @@
                 align-items: center;
                 align-content: center;
                 overflow: auto;
-                color: map-get($colores,naranja);
+                color: map-get($colores, naranja);
                 background-image: url('../img/fondo.jpg');
                 background-size: cover;
                 background-repeat: no-repeat;
